@@ -23,8 +23,7 @@ public class DBConnect {
 			config.addDataSourceProperty("cachePrepStmts", "true");
 			config.addDataSourceProperty("preprStmtChacheSize", "250");
 			config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
-			 ds = new HikariDataSource(config);
-			 
+			ds = new HikariDataSource(config);
 		}
 		try {
 			return ds.getConnection();
